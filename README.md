@@ -1,2 +1,3 @@
-# application-fuel
-AngularJS/IONIC application
+# Fuel App
+
+AngularJS/IONIC simple application.
