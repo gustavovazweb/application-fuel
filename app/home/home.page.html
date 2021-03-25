@@ -1,0 +1,40 @@
+<ion-content padding>  
+	<ion-grid>		
+		<ion-row>
+			<!--ASSETS-->
+			<ion-col size="12">
+				<ion-img src="/assets/logo.png"></ion-img>
+			</ion-col>
+		</ion-row>
+		<!--TITLE-->
+		<ion-row>
+			<ion-col size="12">
+				<h4>
+					Which one is better?!
+				</h4>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<!--FORM-->
+			<ion-col size="12">				
+				<ion-item>
+					<ion-label position="stacked">Alcohol, ex: 1,90</ion-label>
+					<ion-input type="number" [(ngModel)]="valueAlcohol"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label position="stacked">Gasoline, ex: 2,90</ion-label>
+					<ion-input type="number" [(ngModel)]="valueGasoline"></ion-input>
+				</ion-item>
+				<ion-button expand="full" (click)="calc()">Calculate</ion-button>
+			</ion-col>
+		</ion-row>
+		<ion-row>
+			<!--RESULT-->
+			<ion-col size="12">
+				<h5 text-center>
+					{{ result }}
+				</h5>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>
